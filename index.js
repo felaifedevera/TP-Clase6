@@ -1,10 +1,11 @@
+
 const crearLista = (elementos) => {
     const ul = document.createElement('ul');
     ul.classList.add('nav-bar');
   
     elementos.forEach(elemento => {
       const li = document.createElement('li');
-      li.classList.add('tituloNav');
+      li.classList.add('TituloNav');
   
       const a = document.createElement('a');
       a.href = elemento.href;
@@ -20,9 +21,9 @@ const crearLista = (elementos) => {
   const elementosNav = [
     { href: '#', texto: 'Acerca de' },
     { href: '#', texto: 'Servicios' },
-    { href: '#', texto: 'Servicios' },
     { href: '#', texto: 'Informacion' },
-    { href: '#', texto: 'biografia' }
+    { href: '#', texto: 'biografia' },
+    {href:'#',texto:'hola'}
   ];
   
   const nav = crearLista(elementosNav);
