@@ -1,0 +1,41 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    margin: 0;
+    background-color: black;
+}
+.contenedor{
+    text-align: center;
+    padding-left:   100px;
+    background-color:dimgrey;
+
+}   
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    flex-direction: row;
+}
+
+.nose{
+    list-style-type: none;
+    color: honeydew;
+    font-size: 20px;
+}
+.nose a{
+    color: black;
+    text-decoration: none;
+}
+
+.nose a:hover{
+    background-color: honeydew;
+    border-radius: 70%;
+    
+}
+.formulario{
+    
+
+}
