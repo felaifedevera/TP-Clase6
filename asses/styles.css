@@ -20,22 +20,18 @@ body{
     flex-direction: row;
 }
 
-.nose{
+.TituloNav{
     list-style-type: none;
     color: honeydew;
     font-size: 20px;
 }
-.nose a{
+.TituloNav a{
     color: black;
     text-decoration: none;
 }
 
-.nose a:hover{
+.TituloNav a:hover{
     background-color: honeydew;
     border-radius: 70%;
     
-}
-.formulario{
-    
-
 }
