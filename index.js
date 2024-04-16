@@ -6,6 +6,8 @@ const crearLista = (elementos) => {
     elementos.forEach(elemento => {
       const li = document.createElement('li');
       li.classList.add('TituloNav');
+      li.id = elementos.id;
+      
   
       const a = document.createElement('a');
       a.href = elemento.href;
@@ -19,12 +21,13 @@ const crearLista = (elementos) => {
   };
   
   const elementosNav = [
-    { href: '#', texto: 'Acerca de' },
-    { href: '#', texto: 'Servicios' },
-    { href: '#', texto: 'Informacion' },
-    { href: '#', texto: 'biografia' },
-    {href:'#',texto:'hola'}
+    { href: '#',id:'Tecnolgia', texto: 'Tecnologia' },
+    { href: '#',id:'Deportes', texto: 'Deportes' },
+    { href: '#',id:'Noticias', texto: 'Noticias' },
+    { href: '#',id:'Ciencia', texto: 'Ciencia' },
   ];
+
+  
   
   const nav = crearLista(elementosNav);
   document.querySelector('.contenedor').appendChild(nav);
