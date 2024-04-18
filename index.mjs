@@ -74,6 +74,7 @@ const crearLista = (elementos) => {
                   const Img = document.createElement('img');
                   Img.src = el.imagenURL;
                   Img.alt = el.tituloError;
+                  Img.classList.add('IMG');
                   Card.appendChild(Img);
                 
                   const ConteniDeDeCard = document.createElement('div');

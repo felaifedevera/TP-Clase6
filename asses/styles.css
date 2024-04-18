@@ -1,8 +1,10 @@
 *{
-    padding: 0px;
-    margin: 0px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
+    
+ }
 
 body{
     margin: 0;
@@ -38,15 +40,28 @@ body{
 }
 
 .card{
+    display: flex;
+    width: 33vw;
+    height: auto;
+    margin: 10px; /*la distancia entre los contenedores*/
+    border-radius: 41px; /* le modifica el borde de las esquina*/
+    overflow: hidden; /* el contenido que sobrepasa los parametros del card no se vean (existen : scroll,visible,etc)*/
+    background-color:rgb(90, 91, 95);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);/* box shadow le da un sombriado*/
+    cursor: default; /*hace que el cursor no cambie de forma al tocar los textox de la card*/
+    transition: all 400ms ease; /* hace que el movimiento del cursor no sea tan brusco*/
+}
 
-    width: 100%;
-    margin: 10px;
-    border-radius: 41px;
-    overflow: hidden;
-    background-color: rgb(90,91,95);
-    box-shadow: 0px 10px rgba(0, 0, 0, 2);
-    cursor:default;
-    transition: all 400ms ease;
+.IMG{
 
+    width: auto;
+    height: 80%;
+    object-position: top;
+}
+
+.card:hover{
+    box-shadow: 8px 8px 22px rgba(0,0,0,0.6); /* box shadow le da un sombriado*/
+    transform: translatey(5%); /*hace que se mueve en el eje Y - hacia arriba  + hacia abajo*/
+    /* transform: translatex(3%) hace que se mueva en el eje x + hacia la derecha - hacia la izquierda*/ 
 }
 
