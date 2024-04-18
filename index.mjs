@@ -89,6 +89,7 @@ const crearLista = (elementos) => {
                 });
                 return arr;
               }
+             
 
               const loadSexondMenu = () => {
                   seleccion.addEventListener('click', () => {
