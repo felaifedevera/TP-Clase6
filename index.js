@@ -63,40 +63,55 @@ const crearLista = (elementos) => {
                 }
               };
             
-
               Deportes.addEventListener('click', clickHandler)
+
+
+
+              const CrearCard = (datos) =>{
+
+                const Card = document.createElement('div');
+                Card.classList.add('card');
+              
+                const Img = document.createElement('img');
+                Img.src = datos.imagenURL;
+                Img.alt = datos.tituloError;
+                Card.appendChild(Img);
+              
+                const ConteniDeDeCard = document.createElement('div');
+                ConteniDeDeCard.classList.add('contenido');
+              
+                const parafo = document.createElement('p');
+                parafo.textContent = datos.texto;
+                ConteniDeDeCard.appendChild(parafo);
+              
+                Card.appendChild(ConteniDeDeCard);
+
+                return Card;
+              
+              }
+
+              const seleccion = document.getElementById("Seleccion");
+
+              seleccion.addEventListener('click', () => {
+                console.log('holaa');
+
+              const cards =[
+                { href: '#',id:'p1',imagenURL :'TP-Clase6/IMG/argentina.jpg',texto: 'Tecnologia', tituloError : 'No cargo la imagen' },
+                { href: '#',id:'p2',imagenURL :'TP-Clase6/IMG/francia.jpg', texto: 'Deportes', tituloError : 'No cargo la imagen' },
+                { href: '#',id:'p3',imagenURL :'TP-Clase6/IMG/belgica.webp',texto: 'Noticias', tituloError : 'No cargo la imagen' },
+              ];
+            
+              const kard  = CrearCard(cards);
+              document.querySelector('.contenedor3').appendChild(kard);
+
+            });
+
 
 });
 
 
-/*const CrearCard = (datos) =>{
+/*
 
-  const Card = document.createElement('div');
-  card.className.add('card');
-
-  const Img = document.createElement('img');
-  imagen.src = datos.imagenURL;
-  imagen.alt = datos.tituloError;
-  card.appendChild(img);
-
-  const ContenideDeCard = documen.createElement('div');
-  card.className.add('contenido');
-
-  const parafo = document.createElement('p');
-  parafo.textContent = datos.texto;
-  ContenideDeCard.appendChild('p');
-
-  card.appendChild(ContenideDeCard);
-
-}
-const cards =[
-    { href: '#',id:'p1',imagenURL :'TP-Clase6/IMG/argentina.jpg',texto: 'Tecnologia', tituloError : 'No cargo la imagen' },
-    { href: '#',id:'p2',imagenURL :'TP-Clase6/IMG/francia.jpg', texto: 'Deportes', tituloError : 'No cargo la imagen' },
-    { href: '#',id:'p3',imagenURL :'TP-Clase6/IMG/belgica.webp',texto: 'Noticias', tituloError : 'No cargo la imagen' },
-  ];
-
-  const kard  = CrearCard(cards);
-  document.querySelector('.contenedor2').appendChild(kard);
 
 
 
