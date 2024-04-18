@@ -8,7 +8,7 @@
 
 body{
     margin: 0;
-    background-color: rgb(246, 245, 242);
+    background-color: rgb(230, 227, 221);
 }
 .contenedor{
     text-align: center;
@@ -62,7 +62,7 @@ body{
 
 .card:hover{
     box-shadow: 8px 8px 22px rgba(0,0,0,0.6); /* box shadow le da un sombriado*/
-    transform: translatey(5%); /*hace que se mueve en el eje Y - hacia arriba  + hacia abajo*/
+    transform: translatey(9%); /*hace que se mueve en el eje Y - hacia arriba  + hacia abajo*/
     /* transform: translatex(3%) hace que se mueva en el eje x + hacia la derecha - hacia la izquierda*/ 
 }
 
