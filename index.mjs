@@ -52,6 +52,7 @@ const crearLista = (elementos) => {
                 
                   const NavEquipo = crearLista(ElementosEquipo);
                   document.getElementsByClassName('contenedor2')[0].appendChild(NavEquipo);
+                  document.getElementsByClassName('contenedor2')[0].appendChild(document.getElementsByClassName('contenedor3')[0]);
                   seleccion = document.getElementById("Seleccion");
                   loadSexondMenu();
                   eventoEjecutado = true;
