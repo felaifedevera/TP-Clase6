@@ -20,19 +20,11 @@ export const crearLista = (elementos) => {
   
     return ul;
   };
- export const ElementosEquipo = [
-    { href: '#',id:'Seleccion', texto: 'Seleccion' },
-    { href: '#',id:'Equipo', texto: 'Equipo' },
-    { href: '#',id:'Ligas', texto: 'Ligas' },
-  ];
+
+
 
 
   
-  export const elementosNav = [
-    { href: '#',id:'Tecnolgia', texto: 'Tecnologia' },
-    { href: '#',id:'Deportes', texto: 'Deportes' },
-    { href: '#',id:'Noticias', texto: 'Noticias' },
-    { href: '#',id:'Ciencia', texto: 'Ciencia' },
-  ];
+  
 
  
