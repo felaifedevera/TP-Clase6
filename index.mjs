@@ -1,3 +1,5 @@
+//import { myExport } from "tecno.mjs";
+
 let eventoEjecutado = false;
 var seleccion;
 
